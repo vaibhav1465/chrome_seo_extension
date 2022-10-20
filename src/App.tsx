@@ -10,7 +10,7 @@ function App() {
  <button onClick={()=>
   {
     chrome.tabs.create({
-            url: 'https://mail.google.com',
+            url: 'https://test.digg.ai/insights/cmo/dashboard',
             active: true
           })
          }

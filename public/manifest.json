@@ -12,7 +12,18 @@
       "48": "logo192.png",
       "128": "logo192.png"
   },
+  "content_scripts" : [
+{
+  "matches" : ["https://test.digg.ai/insights/cmo/dashboard"],
+  "js":["context.js"]
+}
+  ],
   "background": {
     "service_worker": "background.js"
+  },
+  "permissions" : ["scripting" , "tabs" , "activeTab" , "storage"],
+  "host_permissions" : [
+    "https://www.google.com/" ,
+    "https://test.digg.ai/"
+  ]
   }
-}
